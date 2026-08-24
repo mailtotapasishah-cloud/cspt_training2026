@@ -1,0 +1,132 @@
+```{r}
+x<-10
+class(x)
+```
+```{r}
+y<-"cspt"
+print(y)
+```
+```{r}
+z<-10.5
+class(z)
+z<-as.integer(z)
+class(z)
+print(z)
+```
+```{r}
+max(5,15,25)
+```
+```{r}
+min(5,15,25)
+```
+```{r}
+abs(-5.7)
+```
+```{r}
+ceiling(1.4)
+```
+```{r}
+floor(1.4)
+```
+```{r}
+a <- 200
+b <- 33
+if (b > a) {
+print("b is greater than a")
+} else if (a == b) {
+print("a and b are equal")
+} else {
+print("a is greater than b")
+}
+```
+```{r}
+i <- 1
+while (i < 6) {
+print(i)
+i <- i + 1
+}
+```
+```{r}
+fruits <- c("banana", "apple", "orange")
+print(fruits)
+```
+```{r}
+numbers <- 1:10
+print(numbers)
+```
+
+```{r}
+thislist <- list("apple", "banana", "cherry")
+print(thislist)
+thislist[2]<-"blackberry"
+print(thislist)
+```
+```{r}
+thismatrix <- matrix(c(1,2,3,4,5,6), nrow = 3, ncol = 2)
+thismatrix
+thismatrix[1, 2]
+```
+```{r}
+thisarray <- c(1:24)
+thisarray
+thisarray[-1]
+```
+```{r}
+multiarray <- array(thisarray, dim = c(4, 3, 2))
+multiarray[2, 3, 2]
+multiarray
+```
+```{r}
+Data_Frame <- data.frame (
+Training = c("Strength", "Stamina", "Other"),
+Pulse = c(100, 150, 120),
+Duration = c(60, 30, 45)
+)
+Data_Frame[1]
+Data_Frame[["Training"]]
+Data_Frame$Training
+Data_Frame[2]
+Data_Frame[3]
+
+```
+```{r}
+music_genre <- factor(c("Jazz", "Rock", "Classic", "Classic", "Pop", "Jazz", "Rock",
+"Jazz"))
+music_genre
+```
+```{r}
+for (x in 1:10) {
+print(x)
+}
+```
+```{r}
+fruits <- list("apple", "banana", "cherry")
+for (x in fruits) {
+  if (x == "banana") {
+    next
+}
+print(x)
+}
+```
+```{r}
+x <- c(1, 2, 3, 4, 5)
+y <- c(3, 7, 8, 9, 12)
+plot(x, y, main="My Graph", xlab="The x-axis", ylab="The y axis")
+```
+```{r}
+x <- c(1, 2, 3, 4, 5)
+y <- c(3, 7, 8, 9, 12)
+plot(x, y, type="l", main="My Graph", xlab="The x-axis", ylab="The y axis")
+```
+```{r}
+x <- c(30,20,30,20)
+mylabel <- c("Apples", "Bananas", "Cherries", "Dates")
+colors <- c("red", "yellow", "green", "blue")
+pie(x, label = mylabel, main = "Pie Chart", col = colors)
+legend("bottomright", mylabel, fill = colors)
+```
+```{r}
+x <- c("A", "B", "C", "D")
+y <- c(2, 4, 6, 8)
+barplot(y, names.arg = x, width = c(1,2,3,4))
+```
